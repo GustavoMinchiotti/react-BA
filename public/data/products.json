@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1,
+    "name": "Colombia Huila",
+    "description": "Café de especialidad con notas a cacao, frutos rojos y acidez balanceada. Tueste medio ideal para métodos filtrados.",
+    "price": 18500,
+    "image": "/img/Colombia-Huila.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Etiopía Yirgacheffe",
+    "description": "Perfil floral y cítrico con cuerpo ligero y final dulce. Uno de los cafés africanos más reconocidos del mundo.",
+    "price": 24500,
+    "image": "/img/Etiopía-Yirgacheffe.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Brasil Santos",
+    "description": "Café brasileño de baja acidez con notas a chocolate y avellanas. Perfecto para espresso y bebidas con leche.",
+    "price": 17200,
+    "image": "/img/Brasil-Santos.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Guatemala Antigua",
+    "description": "Tueste medio oscuro con aroma intenso y notas especiadas. Cultivado en tierras volcánicas de gran altitud.",
+    "price": 21900,
+    "image": "/img/Guatemala-Antigua.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Costa Rica Tarrazú",
+    "description": "Café complejo y elegante con notas frutales, miel y final limpio. Excelente para métodos de extracción lenta.",
+    "price": 22800,
+    "image": "/img/Costa-Rica-Tarrazú.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Chemex",
+    "description": "Cafetera de vidrio con diseño icónico y filtro de papel grueso para una taza limpia, suave y aromática.",
+    "price": 68500,
+    "image": "/img/Chemex.jpg"
+  },
+  {
+    "id": 7,
+    "name": "V60",
+    "description": "Dripper cónico diseñado para extracciones precisas y controladas. Ideal para resaltar perfiles complejos del café.",
+    "price": 24500,
+    "image": "/img/v60.jpg"
+  },
+  {
+    "id": 8,
+    "name": "French Press",
+    "description": "Prensa francesa de vidrio templado y estructura metálica. Método clásico para cafés de cuerpo intenso.",
+    "price": 39500,
+    "image": "/img/French-Press.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Molino Manual",
+    "description": "Molino de muelas ajustables para obtener molienda uniforme y preservar la frescura del grano recién molido.",
+    "price": 55900,
+    "image": "/img/molino.jpg"
+  }
+]
