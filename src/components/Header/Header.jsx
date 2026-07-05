@@ -1,18 +1,19 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import logo from "../../assets/coffe-logo.jpg";
-
 import { Nav } from "../Nav/Nav";
-
 import "./Header.css";
 
 export const Header = () => {
-  return (
-    <header>
-      <div className="logo-container">
-        <Link to={"/"}>
-          <img src={logo} alt="Logo Origen" />
+  const location = useLocation();
 
-          <span>Origen</span>
+  const isAdminRoute = location.pathname.startsWith("/admin");
+
+  return (
+    <header className={`header ${isAdminRoute ? "header--admin" : ""}`}>
+      <div className="logo-container">
+        <Link to="/" className="logo-link">
+          <img src={logo} alt="Origen Coffee Logo" className="logo-img" />
+          <span className="logo-text">Origen</span>
         </Link>
       </div>
 

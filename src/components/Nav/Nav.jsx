@@ -1,25 +1,48 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import "./Nav.css";
 import { useCart } from "../../context/CartContext";
-// import styles from "./Nav.module.css";
 
 export const Nav = () => {
   const { getTotalItems } = useCart();
-
   const totalItems = getTotalItems();
 
   return (
-    <nav>
-      {/* <ul className={styles["nav-list"]}> */}
+    <nav className="nav">
       <ul className="nav-list">
         <li>
-          <Link to={"/"}>Home</Link>
+          <NavLink
+            to="/"
+            className={({ isActive }) =>
+              isActive ? "nav-link active" : "nav-link"
+            }
+          >
+            Home
+          </NavLink>
         </li>
+
         <li>
-          <Link to={"/carrito"}>
+          <NavLink
+            to="/carrito"
+            className={({ isActive }) =>
+              isActive ? "nav-link active" : "nav-link"
+            }
+          >
             Carrito
-            {totalItems > 0 && <span className="incart">{totalItems}</span>}
-          </Link>
+            {totalItems > 0 && (
+              <span className="cart-badge">{totalItems}</span>
+            )}
+          </NavLink>
+        </li>
+
+        <li>
+          <NavLink
+            to="/admin/login"
+            className={({ isActive }) =>
+              isActive ? "nav-link active" : "nav-link"
+            }
+          >
+            Admin
+          </NavLink>
         </li>
       </ul>
     </nav>

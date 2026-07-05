@@ -1,0 +1,58 @@
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.45);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 999;
+}
+
+.confirm-modal {
+    width: 90%;
+    max-width: 420px;
+
+    background: white;
+
+    border-radius: 12px;
+
+    padding: 2rem;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .25);
+
+    animation: modalFade .18s ease;
+}
+
+.confirm-modal h3 {
+    margin: 0 0 1rem;
+    color: #222;
+}
+
+.confirm-modal p {
+    margin: 0;
+    line-height: 1.5;
+    color: #555;
+}
+
+.modal-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: .75rem;
+
+    margin-top: 2rem;
+}
+
+@keyframes modalFade {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
